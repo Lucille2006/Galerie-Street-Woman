@@ -132,15 +132,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="images-sw/photo_2026-11-09_12-16-31.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="images-sw/favicon-sw.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>L’art dans la rue. Les femmes au centre.</span>
+      <span>Galerie de street art · Nice</span>
+    </div>
+  </div>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo logo-img" href="#accueil" aria-label="STREET WOMAN, accueil"><img src="images-sw/logoHeader.png" alt="STREET WOMAN" width="2036" height="366"><span class="logo-text logo-short" aria-hidden="true">SW</span></a>
+      <a class="logo logo-mark" href="#accueil" aria-label="STREET WOMAN, accueil"><span aria-hidden="true">SW</span></a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
       <label for="nav-toggle" class="nav-button">Menu</label>
       <nav class="nav" aria-label="Navigation principale">
@@ -157,8 +163,11 @@
 
   <main id="contenu" class="wrap">
     <div id="accueil" class="page-section">
+      <div class="hero-logo">
+        <img src="images-sw/logoHeader.png" alt="STREET WOMAN" width="2036" height="366">
+      </div>
       <section class="hero" aria-labelledby="hero-title">
-        <div>
+        <div class="hero-text">
           <p class="kicker">L’art dans la rue. Les femmes au centre. Galerie de street art indépendante</p>
           <h1 id="hero-title">Une galerie de street art féministe à Nice, pensée pour représenter les femmes.</h1>
           <p>Des murs aux regards, STREET WOMAN ouvre un espace aux voix féminines du street art. Cette galerie d’art urbain à Nice met en lumière les fresques, les artistes femmes et les idées qui bousculent la ville.</p>
@@ -170,16 +179,16 @@
         <aside class="manifesto" aria-label="Notre manifeste">
           <p class="kicker">Notre manifeste</p>
           <h2>Prendre<br>sa place.</h2>
-          <p>Créer sans permission.<br>Être vues sans condition.</p>
+          <p class="manifesto-line">Créer sans permission.<br>Être vues sans condition.</p>
         </aside>
       </section>
 
       <section aria-labelledby="entrer">
         <h2 id="entrer" class="kicker">Entrer dans STREET WOMAN</h2>
         <div class="steps">
-          <a href="#images-du-moment"><b>01</b><strong>Voir les images</strong><br><span>Deux images. Deux regards.</span></a>
-          <a href="#galerie"><b>02</b><strong>Explorer la galerie</strong><br><span>Des œuvres qui prennent place.</span></a>
-          <a href="#evenements"><b>03</b><strong>Se rencontrer</strong><br><span>Vernissage et soirée débat.</span></a>
+          <a href="#images-du-moment"><b>01</b><strong>Voir les images</strong><span>Deux images. Deux regards.</span><em>Images du moment</em></a>
+          <a href="#galerie"><b>02</b><strong>Explorer la galerie</strong><span>Des œuvres qui prennent place.</span><em>Galerie</em></a>
+          <a href="#evenements"><b>03</b><strong>Se rencontrer</strong><span>Vernissage et soirée débat.</span><em>Événements</em></a>
         </div>
       </section>
     </div>
@@ -187,10 +196,13 @@
     <section id="images-du-moment" class="page-section" aria-labelledby="titre-moment">
       <header class="page-head">
         <div>
-          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+          <p class="sec-num">01 / STREET WOMAN</p>
           <h2 id="titre-moment" class="title-xl">Les images du moment</h2>
         </div>
-        <p>Deux images pour s’arrêter, regarder autrement et faire entendre d’autres voix.</p>
+        <div class="page-head-aside">
+          <p>Deux images pour s’arrêter, regarder autrement et faire entendre d’autres voix.</p>
+          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+        </div>
       </header>
       <div class="moment">
         <figure>
@@ -212,21 +224,31 @@
           </figcaption>
         </figure>
       </div>
-      <p class="btn-row"><a class="btn btn--primary" href="#galerie">Explorer la galerie</a></p>
+      <div class="moment-foot">
+        <p>Le regard se poursuit dans les galeries.</p>
+        <a class="btn btn--primary" href="#galerie">Explorer la galerie</a>
+      </div>
     </section>
 
     <section id="galerie" class="page-section" aria-labelledby="titre-galerie">
       <header class="page-head">
         <div>
-          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+          <p class="sec-num">02 / STREET WOMAN</p>
           <h2 id="titre-galerie" class="title-xl">Galerie</h2>
         </div>
-        <p>Présences. Des regards, des corps et des voix qui s’inscrivent dans l’espace urbain.</p>
+        <div class="page-head-aside">
+          <p>Présences. Des regards, des corps et des voix qui s’inscrivent dans l’espace urbain.</p>
+          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+        </div>
       </header>
-      <p class="kicker" style="margin-top:24px">Présences / Collection photographique · 8 images</p>
+      <div class="grid-head">
+        <p class="kicker">Présences / Collection photographique</p>
+        <p class="kicker">08 images</p>
+      </div>
       <ul class="grid">
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">01</span>
             <img class="ph" src="images-sw/photo_2026-11-09_12-16-38.jpg" alt="Pochoir de street art rétro sur papier journal représentant une femme avec la mention Kiss Kiss Bang Bang" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Titre de l’œuvre inconnu 01</h3>
@@ -235,7 +257,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">02</span>
             <img class="ph" src="images-sw/pexels-vladimir-shipulin-1913623873-37497480.jpg" alt="Peinture murale The Watchers: Keep One Eye Open par Habiba Abdul Rahim sur une façade en briques rouges à Portland" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>The Watchers: Keep One Eye Open 02</h3>
@@ -244,7 +267,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">03</span>
             <img class="ph" src="images-sw/pexels-christopher-santiago-2154898527-38116270.jpg" alt="Fresque murale Tiger Dragon par Luke Dragon représentant une figure féminine entourée d'un tigre et d'un paon à San Francisco" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Tiger Dragon 03</h3>
@@ -253,7 +277,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">04</span>
             <img class="ph" src="images-sw/Mural_dedicated_to_women_by_Martyna_Gill_&_Paweł_Ponichtera,_Łódź,_53_Kopernika_Street.jpg" alt="Fresque murale Sisterhood dédiée aux femmes par Martyna Gill et Paweł Ponichtera à Łódź en Pologne" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Sisterhood 04</h3>
@@ -262,7 +287,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">05</span>
             <img class="ph" src="images-sw/Street_art_in_Sabadell_(Creu_Alta)_(2).JPG" alt="Fresque murale de street art représentant le portrait d'une femme afro à lunettes rouges à Sabadell en Espagne" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Titre de l’œuvre inconnu 05</h3>
@@ -271,7 +297,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">06</span>
             <img class="ph" src="images-sw/Bcn_julio_2011.street_art.016_(5955502661).jpg" alt="Portrait mural féminin mêlant réalisme et motifs pop par l'artiste urbain N4T4 au Royaume-Uni" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Titre de l’œuvre inconnu 06</h3>
@@ -280,7 +307,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">07</span>
             <img class="ph" src="images-sw/fille-2026-11-09.png" alt="Graffiti d'Alice Pasquini (AliCè) représentant une jeune fille sur un tricycle au Cours Julien à Marseille" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Titre de l’œuvre inconnu 07</h3>
@@ -289,7 +317,8 @@
           </figure>
         </li>
         <li class="work">
-          <figure style="margin:0">
+          <figure>
+            <span class="work-num" aria-hidden="true">08</span>
             <img class="ph" src="images-sw/Street_art_in_Gorakhpur_2019-04-08_53.jpg" alt="Fresque murale féministe en noir, blanc et rouge de l'artiste Paula Bonet à Figueres en Catalogne" width="400" height="500" loading="lazy" decoding="async">
             <figcaption>
               <h3>Titre de l’œuvre inconnu 08</h3>
@@ -304,16 +333,19 @@
     <section id="evenements" class="page-section" aria-labelledby="titre-evenements">
       <header class="page-head">
         <div>
-          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+          <p class="sec-num">04 / STREET WOMAN</p>
           <h2 id="titre-evenements" class="title-xl">Événements</h2>
         </div>
-        <p>Au-delà des images, des rencontres pour faire circuler les regards et les idées.</p>
+        <div class="page-head-aside">
+          <p>Au-delà des images, des rencontres pour faire circuler les regards et les idées.</p>
+          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+        </div>
       </header>
       <div class="events">
         <div class="event">
-          <aside><p>Voir.<br>Ressentir.<br>Échanger.</p></aside>
+          <aside><p class="kicker">01 / Rencontre</p><p class="event-shout">Voir.<br>Ressentir.<br>Échanger.</p></aside>
           <article>
-            <p class="kicker">01 / Rencontre · STREET WOMAN / VERNISSAGE</p>
+            <p class="kicker">STREET WOMAN / Vernissage</p>
             <h3>Vernissage</h3>
             <p>Un temps pour découvrir les œuvres, partager les premières impressions et ouvrir la conversation autour des femmes dans le street art. La galerie se vit aussi ensemble.</p>
             <dl>
@@ -321,14 +353,16 @@
               <div><dt>Horaires</dt><dd>16h–22h</dd></div>
               <div><dt>Lieu</dt><dd>Coulée verte, Nice</dd></div>
             </dl>
-            <p class="note">Exposition, artistes et modalités de participation à compléter.</p>
-            <a class="btn" href="#contact">Nous contacter</a>
+            <div class="event-foot">
+              <p class="note">Exposition, artistes et modalités de participation à compléter.</p>
+              <a class="btn" href="#contact">Nous contacter</a>
+            </div>
           </article>
         </div>
         <div class="event">
-          <aside><p>Qui prend<br>la place ?</p></aside>
+          <aside><p class="kicker">02 / Rencontre</p><p class="event-shout">Qui prend<br>la place ?</p></aside>
           <article>
-            <p class="kicker">02 / Rencontre · STREET WOMAN / SOIRÉE DÉBAT</p>
+            <p class="kicker">STREET WOMAN / Soirée débat</p>
             <h3>Soirée débat</h3>
             <p>Quelle place pour les femmes dans l’art urbain ? Une soirée pour interroger la visibilité, les représentations et l’accès à l’espace public, dans un dialogue ouvert à toutes et tous.</p>
             <dl>
@@ -336,21 +370,26 @@
               <div><dt>Horaires</dt><dd>19h–21h</dd></div>
               <div><dt>Lieu</dt><dd>Coulée verte, Nice</dd></div>
             </dl>
-            <p class="note">Intervenantes, programme et modalités de participation à compléter.</p>
-            <a class="btn" href="#contact">Nous contacter</a>
+            <div class="event-foot">
+              <p class="note">Intervenantes, programme et modalités de participation à compléter.</p>
+              <a class="btn" href="#contact">Nous contacter</a>
+            </div>
           </article>
         </div>
       </div>
-      <p class="note">Programmation à compléter · Les informations pratiques seront précisées pour chaque rencontre.</p>
+      <p class="note note--bar">Programmation à compléter · Les informations pratiques seront précisées pour chaque rencontre.</p>
     </section>
 
     <section id="contact" class="page-section" aria-labelledby="titre-contact">
       <header class="page-head">
         <div>
-          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+          <p class="sec-num">05 / STREET WOMAN</p>
           <h2 id="titre-contact" class="title-xl">Écrivez-nous.</h2>
         </div>
-        <p>Une question, une œuvre à proposer ou l’envie de participer ? Le dialogue commence ici.</p>
+        <div class="page-head-aside">
+          <p>Une question, une œuvre à proposer ou l’envie de participer ? Le dialogue commence ici.</p>
+          <p class="kicker">Galerie contemporaine · Regard féministe</p>
+        </div>
       </header>
       <div class="contact">
         <div>
@@ -363,7 +402,7 @@
             <p><strong>Téléphone</strong><br><a href="tel:+33498723342">04 98 72 33 42</a></p>
           </address>
         </div>
-        <form action="#" method="post">
+        <form class="form-card" action="#" method="post">
           <h3>Votre message</h3>
           <div class="row">
             <label for="prenom">Prénom *<input id="prenom" name="prenom" type="text" placeholder="Votre prénom" autocomplete="given-name" required></label>
@@ -383,7 +422,7 @@
           <label for="message">Message *<textarea id="message" name="message" placeholder="Quelques mots sur votre demande…" required></textarea></label>
           <p class="note">* Champs obligatoires</p>
           <label class="check" for="rgpd"><input id="rgpd" type="checkbox" required> J’accepte que mes informations soient utilisées pour répondre à ma demande. Consultez la politique de confidentialité.</label>
-          <div><button class="btn btn--primary" type="submit">Envoyer le message</button> <span class="note">Vos mots restent entre nous.</span></div>
+          <div class="form-foot"><button class="btn btn--primary" type="submit">Envoyer le message</button> <span class="note">Vos mots restent entre nous.</span></div>
         </form>
       </div>
     </section>
@@ -391,7 +430,10 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p class="logo logo-text">STREET WOMAN</p>
+      <div class="footer-brand">
+        <img src="images-sw/logoHeader.png" alt="STREET WOMAN" width="2036" height="366" loading="lazy">
+        <p class="kicker">Galerie de street art</p>
+      </div>
       <nav aria-label="Navigation de pied de page">
         <ul>
           <li><a href="#accueil">Accueil</a></li>
@@ -401,7 +443,10 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <small>L’art dans la rue. Les femmes au centre. · Galerie de street art à Nice · Mentions légales · Confidentialité · Crédits des œuvres à compléter</small>
+      <div class="footer-bottom">
+        <small>L’art dans la rue. Les femmes au centre. · Galerie de street art à Nice</small>
+        <small>Mentions légales · Confidentialité · Crédits des œuvres à compléter</small>
+      </div>
     </div>
   </footer>
 </body>
